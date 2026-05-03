@@ -2,7 +2,7 @@
   "name": "permission-explainer",
   "version": "1.0.0",
   "description": "调用大模型用中文解释每一个需要权限的工具调用，帮助用户理解操作含义、风险和后果，做出知情决定。一律不自动放行，安全优先。",
-  "author": "sjpzd",
+  "author": "写您自己的用户名",
   "hooks": {
     "config": "hooks/hooks.json"
   },
