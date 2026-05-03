@@ -1,0 +1,4 @@
+.analysis_cache.json
+.pending_approvals.json
+__pycache__/
+*.pyc

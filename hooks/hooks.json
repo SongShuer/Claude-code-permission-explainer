@@ -1,0 +1,17 @@
+{
+  "description": "PreToolUse 拦截：调用 DeepSeek API 分析工具调用，用中文解释操作含义、风险等级、后果。原英文权限提示保留（双语）。",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|PowerShell|WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/explain.py",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
